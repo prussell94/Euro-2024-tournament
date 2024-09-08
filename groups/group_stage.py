@@ -56,21 +56,6 @@ class GroupStage():
         result_e = self._groupE.simulate_group()
         result_f = self._groupF.simulate_group()
 
-        # group_c = groups.group_c()
-        # result_c = group_c.simulate_group()
-        # group_d = groups.group_d()
-        # result_d = group_d.simulate_group()
-        # group_e = groups.group_e()
-        # result_e = group_e.simulate_group()
-        # group_f = groups.group_f()
-        # result_f = group_f.simulate_group()
-        # result_a = groups.group.simulate_group(self.group_a)
-        # result_b = groups.group.simulate_group(self.group_b)
-        # result_c = groups.group.simulate_group(self.group_c)
-        # result_d = groups.group.simulate_group(self.group_d)
-        # result_e = groups.group.simulate_group(self.group_e)
-        # result_f = groups.group.simulate_group(self.group_f)
-
         result_a["Group"]="A"
         result_b["Group"]="B"
         result_c["Group"]="C"

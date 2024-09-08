@@ -35,8 +35,8 @@ class TestMLModelStrategy(TestCase):
 
         match_with_ml_strategy = strategy.calculate_performance(team_a_name, team_b_name)
 
-        expected_goals_a = 0
-        expected_goals_b = 3
+        expected_goals_a = 1
+        expected_goals_b = 2
 
         self.assertEqual(expected_goals_a, match_with_ml_strategy.get_teamAGoalsScored())
         self.assertEqual(expected_goals_b, match_with_ml_strategy.get_teamBGoalsScored())

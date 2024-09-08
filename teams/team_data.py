@@ -16,10 +16,10 @@ switzerlandDefensiveQDist = QualityDistribution(0.7, 1.4)
 hungaryOffensiveQDist = QualityDistribution(1.2, 1.6)
 hungaryDefensiveQDist = QualityDistribution(1.2, 1.4)
 
-germany = Team("Germany", [], germanyOffensiveQDist, germanyDefensiveQDist)
-scotland = Team("Scotland", [], scotlandOffensiveQDist, scotlandDefensiveQDist)
-switzerland = Team("Switzerland", [], switzerlandOffensiveQDist, switzerlandDefensiveQDist)
-hungary = Team("Hungary", [], hungaryOffensiveQDist, hungaryDefensiveQDist)
+germany = Team("Germany", squad=[], offensive_quality_distributon=germanyOffensiveQDist, defensive_quality_distribution=germanyDefensiveQDist)
+scotland = Team("Scotland", squad=[], offensive_quality_distributon=scotlandOffensiveQDist, defensive_quality_distribution=scotlandDefensiveQDist)
+switzerland = Team("Switzerland", squad=[], offensive_quality_distributon=switzerlandOffensiveQDist, defensive_quality_distribution=switzerlandDefensiveQDist)
+hungary = Team("Hungary", squad=[], offensive_quality_distributon=hungaryOffensiveQDist, defensive_quality_distribution=hungaryDefensiveQDist)
 
 spainOffensiveQDist = QualityDistribution(2.5, 1.4)
 spainDefensiveQDist = QualityDistribution(0.9, 1.2)
@@ -106,6 +106,6 @@ georgia= Team("Georgia", [], georgiaOffensiveQDist, georgiaDefensiveQDist)
 portugal = Team("Portugal", [], portugalOffensiveQDist, portugalDefensiveQDist)
 czechia = Team("Czechia", [], czechiaOffensiveQDist, czechiaDefensiveQDist)
 
-teams_dict = {"Germany": germany, "Switzerland": switzerland, "Scotland": scotland, "Hungary": hungary, "Spain": spain, "Italy": italy, "Croatia": croatia, "Albania": albania, "England": england,
-              "Slovenia": slovenia, "Serbia": serbia, "Denmark": denmark, "France": france, "Netherlands": netherlands, "Poland": poland, "Austria": austria, "Belgium": belgium, "Slovakia": slovakia,
-              "Romania": romania, "Ukraine": ukraine, "Turkey": turkey, "Portugal": portugal, "Czechia": czechia, "Georgia": georgia}
+# teams_dict = {"Germany": germany, "Switzerland": switzerland, "Scotland": scotland, "Hungary": hungary, "Spain": spain, "Italy": italy, "Croatia": croatia, "Albania": albania, "England": england,
+#               "Slovenia": slovenia, "Serbia": serbia, "Denmark": denmark, "France": france, "Netherlands": netherlands, "Poland": poland, "Austria": austria, "Belgium": belgium, "Slovakia": slovakia,
+#               "Romania": romania, "Ukraine": ukraine, "Turkey": turkey, "Portugal": portugal, "Czechia": czechia, "Georgia": georgia}

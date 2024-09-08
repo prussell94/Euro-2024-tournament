@@ -72,6 +72,10 @@ class MLModelStrategy(PerformanceStrategy):
         team_a = combined_df[combined_df.reset_index()['nationality_name'] == team_a_name]
         team_b = combined_df[combined_df.reset_index()['nationality_name'] == team_b_name]
 
+        print("team a")
+        print(team_a_name)
+        print(team_a)
+        print(team_b)
         team_a_modified = pd.concat([team_a.iloc[0, 1:-1], team_b.iloc[0, 1:-1].add_suffix('_opposition'), team_a.iloc[0, -1:]])
         team_b_modified = pd.concat([team_b.iloc[0, 1:-1], team_a.iloc[0, 1:-1].add_suffix('_opposition'), team_b.iloc[0, -1:]])
         
@@ -106,12 +110,15 @@ class MLModelStrategy(PerformanceStrategy):
     
         return win_A / total, draw / total, win_B / total
 
-    def simulate_match(self, team_a_name, team_b_name):
+    def simulate_match(self, team_a, team_b):
 
         agg_quality_df = self.aggregate_quality_metrics()
         player_count_df = self.count_players_per_nationality()
         combined_df = self.merge_quality_and_player_count(agg_quality_df, player_count_df)
 
+        team_a_name = team_a.get_countryName()
+        team_b_name = team_b.get_countryName()
+        
         team_a, team_b = self.create_team_data(combined_df.reset_index(), team_a_name, team_b_name)
         predictions = self.make_predictions(team_a, team_b)
 

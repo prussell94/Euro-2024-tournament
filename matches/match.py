@@ -153,7 +153,7 @@ class Match(ABC):
         team_b.set_goalsScored(team_b_goals_scored_rounded)
         team_b.set_goalsConceded(team_a_goals_scored_rounded)
 
-        match = self.simulate_match_impl(team_a, team_b, strategy, seed=seed)
+        match = self.simulate_match_impl(team_a, team_b, strategy)
         # match = Match(team_a, team_b, team_a_goals_scored=team_a_goals_scored, team_b_goals_scored=team_b_goals_scored)
         return match
 
